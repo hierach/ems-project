@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifengqin.mapper.TeacherMapper">
+
+    <resultMap id="BaseResultMap" type="com.weifengqin.entity.Teacher">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="techNum" column="tech_num" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="INTEGER"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="faculty" column="faculty" jdbcType="VARCHAR"/>
+            <result property="jobTitle" column="job_title" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,tech_num,password,
+        name,type,sex,
+        faculty,job_title
+    </sql>
+    <select id="getMarkList" resultType="com.weifengqin.vo.MarkVo">
+        SELECT c.course_num, c.course_name, s.stu_num, s.`name` AS stu_name, c.start_time, c.end_time,c.full_mark
+        FROM cst, course c, student s
+        <where>
+            cst.tech_num = #{techNum}
+            AND cst.course_num = c.course_num
+            AND cst.stu_num = s.stu_num
+            AND cst.mark = -1
+            <if test="courseName != null and courseName != ''">
+                AND c.course_name LIKE CONCAT('%', #{courseName}, '%')
+            </if>
+        </where>
+    </select>
+    <select id="getLeaveList" resultType="com.weifengqin.vo.TechLeaveVo">
+        SELECT
+            cst.tech_num,
+            c.course_num,
+            c.course_name,
+            s.stu_num,
+            s.`name` AS stu_name,
+            c.sel_week,
+            c.sel_start,
+            c.sel_end,
+            cst.leave_start,
+            cst.leave_end
+        FROM
+            cst,
+            course c,
+            student s
+        WHERE
+            cst.tech_num = #{techNum}
+          AND cst.course_num = c.course_num
+          AND cst.stu_num = s.stu_num
+          AND cst.leave_status = 1
+    </select>
+</mapper>

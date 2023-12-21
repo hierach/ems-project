@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifengqin.mapper.OpenMapper">
+
+    <resultMap id="BaseResultMap" type="com.weifengqin.entity.Open">
+            <result property="adminNum" column="admin_num" jdbcType="VARCHAR"/>
+            <result property="courseNum" column="course_num" jdbcType="VARCHAR"/>
+            <result property="techNum" column="tech_num" jdbcType="VARCHAR"/>
+            <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="score" column="score" jdbcType="INTEGER"/>
+            <result property="fullMark" column="full_mark" jdbcType="INTEGER"/>
+            <result property="maxPeople" column="max_people" jdbcType="INTEGER"/>
+            <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="place" column="place" jdbcType="VARCHAR"/>
+            <result property="selWeek" column="sel_week" jdbcType="INTEGER"/>
+            <result property="selStart" column="sel_start" jdbcType="INTEGER"/>
+            <result property="selEnd" column="sel_end" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        admin_num,course_num,tech_num,
+        course_name,status,score,
+        full_mark,max_people,start_time,
+        end_time,place,sel_week,
+        sel_start,sel_end
+    </sql>
+</mapper>

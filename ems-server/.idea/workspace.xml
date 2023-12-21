@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a1b0030-ddcb-4368-aae7-90aaf9e59872" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\apache-maven-3.6.1\mvn-resp" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.6.1" />
+        <option name="showDialogWithAdvancedSettings" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2ZNwsBQgRwdrAAs06D7k1MZUEsS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/weifengqin/interceptor" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\desktop\StudentManager\ems-server\src\main\java\com\weifengqin\interceptor" />
+      <recent name="D:\desktop\StudentManager\ems-server\src\main\java\com\weifengqin\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.weifengqin.utils" />
+      <recent name="com.weifengqin.config" />
+      <recent name="com.weifengqin.dto" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="ems-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.weifengqin.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a1b0030-ddcb-4368-aae7-90aaf9e59872" name="Default Changelist" comment="" />
+      <created>1702276051159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702276051159</updated>
+      <workItem from="1702276054220" duration="8926000" />
+      <workItem from="1702302697605" duration="5909000" />
+      <workItem from="1702309681751" duration="955000" />
+      <workItem from="1702346920481" duration="751000" />
+      <workItem from="1702383681812" duration="734000" />
+      <workItem from="1702384456868" duration="959000" />
+      <workItem from="1702385450701" duration="836000" />
+      <workItem from="1702466021888" duration="4834000" />
+      <workItem from="1702476633007" duration="4652000" />
+      <workItem from="1702518645262" duration="6539000" />
+      <workItem from="1702535017734" duration="10199000" />
+      <workItem from="1702553036481" duration="2673000" />
+      <workItem from="1702556349935" duration="60000" />
+      <workItem from="1702622510818" duration="3057000" />
+      <workItem from="1702790641311" duration="8377000" />
+      <workItem from="1702815457348" duration="3492000" />
+      <workItem from="1702825515158" duration="5830000" />
+      <workItem from="1702897335751" duration="6842000" />
+      <workItem from="1702951964746" duration="13036000" />
+      <workItem from="1702985409455" duration="5833000" />
+      <workItem from="1702997410292" duration="4222000" />
+      <workItem from="1703038376442" duration="17119000" />
+      <workItem from="1703078453100" duration="4930000" />
+      <workItem from="1703123626926" duration="3107000" />
+      <workItem from="1703127185052" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifengqin.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.weifengqin.entity.Student">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="stuNum" column="stu_num" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="sex" column="sex" jdbcType="VARCHAR"/>
+        <result property="year" column="year" jdbcType="VARCHAR"/>
+        <result property="major" column="major" jdbcType="VARCHAR"/>
+        <result property="needScore" column="need_score" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,stu_num,password,
+        type,sex,year,
+        major,need_score
+    </sql>
+    <select id="getLeaveList" resultType="com.weifengqin.vo.StuLeaveVo">
+        SELECT c.course_num,c.course_name,t.tech_num,t.`name` AS
+        tech_name,c.sel_week,c.sel_start,c.sel_end,cst.leave_status,cst.leave_start,cst.leave_end
+        FROM cst,course c,teacher t
+        WHERE cst.stu_num = #{stuNum}
+        AND cst.course_num = c.course_num
+        AND cst.tech_num = t.tech_num
+        AND cst.mark &lt; 0
+    </select>
+    <select id="getHasScores" resultType="java.lang.Integer">
+        SELECT c.score
+        FROM cst,
+             student s,
+             course c
+        WHERE cst.stu_num = #{stuNum}
+          AND cst.course_num = c.course_num
+          AND cst.mark >= 60
+    </select>
+
+    <select id="getTimeTableList" resultType="com.weifengqin.vo.TimeTableVo">
+        SELECT c.sel_week    AS xq,
+               c.course_name AS title,
+               c.start_time,
+               c.end_time,
+               c.place,
+               c.sel_start   AS start,
+               c.sel_end     AS end
+        FROM cst,
+             course c
+        WHERE cst.stu_num = #{stuNum}
+          AND cst.mark = -1
+          AND cst.course_num = c.course_num
+    </select>
+</mapper>

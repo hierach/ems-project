@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifengqin.mapper.CstMapper">
+
+    <resultMap id="BaseResultMap" type="com.weifengqin.entity.Cst">
+            <result property="courseNum" column="course_num" jdbcType="VARCHAR"/>
+            <result property="stuNum" column="stu_num" jdbcType="VARCHAR"/>
+            <result property="techNum" column="tech_num" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        course_num,stu_num,tech_num
+    </sql>
+
+    <select id="selectValidCourseNum" resultType="string">
+        select course_num from cst where stu_num = #{userId}
+    </select>
+    <select id="getCourseNumListByTechNum" resultType="java.lang.String">
+        SELECT cst.course_num
+        FROM cst
+        WHERE cst.tech_num = #{techNum}
+    </select>
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifengqin.mapper.CourseMapper">
+
+    <resultMap id="BaseResultMap" type="com.weifengqin.entity.Course">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="courseNum" column="course_num" jdbcType="VARCHAR"/>
+        <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+        <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+        <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+        <result property="fullMark" column="full_mark" jdbcType="INTEGER"/>
+        <result property="score" column="score" jdbcType="INTEGER"/>
+        <result property="selPeople" column="sel_people" jdbcType="INTEGER"/>
+        <result property="maxPeople" column="max_people" jdbcType="INTEGER"/>
+        <result property="place" column="place" jdbcType="VARCHAR"/>
+        <result property="selWeek" column="sel_week" jdbcType="INTEGER"/>
+        <result property="selStart" column="sel_start" jdbcType="INTEGER"/>
+        <result property="selEnd" column="sel_end" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,course_num,course_name,
+        start_time,end_time,full_mark,
+        score,sel_people,max_people,
+        place,sel_week,sel_start,
+        sel_end
+    </sql>
+
+    <select id="selectCourseByStudentId" resultType="com.weifengqin.entity.Course">
+        SELECT course.*
+        FROM course,
+             cst
+        WHERE course.course_num = cst.course_num
+          AND cst.stu_num = #{userId}
+    </select>
+</mapper>
