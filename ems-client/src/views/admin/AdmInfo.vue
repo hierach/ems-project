@@ -107,7 +107,7 @@ const OnSubmit = () => {
         </div>
         <div style="margin-top: 5px" class="stateItem">
           <el-icon><Position /></el-icon>
-          <div>QQ: 1060829100</div>
+          <div>Github: hierach</div>
         </div>
         <div style="margin-top: 5px" class="stateItem">
           <el-icon><WarningFilled /></el-icon>

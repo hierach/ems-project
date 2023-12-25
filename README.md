@@ -13,7 +13,7 @@
 
 1. 登录 / 登出模块
 
-![image-20231221115715301](.\README.assets\image-20231221115715301.png)
+![image-20231221115715301](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525926.png)
 
 ---
 
@@ -31,17 +31,17 @@
 
    6. 学生课程表
 
-![image-20231221115741780](.\README.assets\image-20231221115741780.png)
+![image-20231225160607605](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312251606743.png)
 
-![image-20231221115756404](.\README.assets\image-20231221115756404.png)
+![image-20231221115756404](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525928.png)
 
-![image-20231221115803651](.\README.assets\image-20231221115803651.png)
+![image-20231221115803651](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525929.png)
 
-![image-20231221115833622](.\README.assets\image-20231221115833622.png)
+![image-20231221115833622](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525930.png)
 
-![image-20231221115814571](.\README.assets\image-20231221115814571.png)
+![image-20231221115814571](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525931.png)
 
-![image-20231221115820816](.\README.assets\image-20231221115820816.png)
+![image-20231221115820816](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525932.png)
 
 ---
 
@@ -55,13 +55,13 @@
    3. 打分管理。按名字查询，打分。
    4. 请假管理。批准/驳回学生请假
 
-![image-20231221115849022](.\README.assets\image-20231221115849022.png)
+![image-20231225160653190](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312251606285.png)
 
-![image-20231221115856101](.\README.assets\image-20231221115856101.png)
+![image-20231221115856101](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525934.png)
 
-![image-20231221115903970](.\README.assets\image-20231221115903970.png)
+![image-20231221115903970](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525936.png)
 
-![image-20231221115911798](.\README.assets\image-20231221115911798.png)
+![image-20231221115911798](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525937.png)
 
 ---
 
@@ -75,13 +75,13 @@
    4. 开课申请。对教师申请的开课进行
           批准 / 驳回
 
-![image-20231221115935762](.\README.assets\image-20231221115935762.png)
+![image-20231225160720828](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312251607922.png)
 
-![image-20231221115941553](.\README.assets\image-20231221115941553.png)
+![image-20231221115941553](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525939.png)
 
-![image-20231221115946735](.\README.assets\image-20231221115946735.png)
+![image-20231221115946735](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525940.png)
 
-![image-20231221115954416](.\README.assets\image-20231221115954416.png)
+![image-20231221115954416](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525941.png)
 
 
 
@@ -97,10 +97,12 @@
 
 * 项目实现：
 
-   ①只有前端课程表前端代码参考网上编写
+   ①前端课程表前端代码和登录校验器参考网上编写
 
   [参考课程表链接---感谢作者](https://blog.csdn.net/qq_35163460/article/details/128451842)
 
+  [参考登录校验器---感谢作者](https://www.bilibili.com/video/BV1cr4y1671t/?spm_id_from=333.337.search-card.all.click&vd_source=3c261d2624d54bbcb7865ce4e2fa8d13)
+  
    ②其余主要代码均由个人实现
 
 
@@ -121,7 +123,7 @@
 
    Echarts：基于 JavaScript 的开源可视化图表库
 
-  ![image-20231221120059253](.\README.assets\image-20231221120059253.png)
+  ![image-20231221120059253](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525942.png)
 
 * 后端
 
@@ -129,7 +131,7 @@
 
    MybatisPlus：单表和多表查询
 
-  ![image-20231221120120042](.\README.assets\image-20231221120120042.png)
+  ![image-20231221120120042](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525943.png)
 
 * 数据库
 
@@ -137,7 +139,7 @@
 
   Redis：主要用来存储登录信息
 
-  ![image-20231221120145651](.\README.assets\image-20231221120145651.png)
+  ![image-20231221120145651](https://weifengqin-image.oss-cn-nanjing.aliyuncs.com/img/202312211525944.png)
 
 ## 4. 目录结构说明
 
